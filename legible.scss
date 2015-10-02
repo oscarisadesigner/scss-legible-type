@@ -1,0 +1,24 @@
+@function rem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+
+@mixin font-size($size) {
+
+    font-size: $size;
+    font-size: rem($size);
+    
+    $unitless-size: $size / 1px;
+    
+    @if ($unitless-size < 18) {
+    
+	    $tracking: ( ($unitless-size*$unitless-size) - (28*($unitless-size)) + 220 ) /1000;
+    
+    } @else {
+	    $tracking: 0;
+    }
+    
+    letter-spacing: #{$tracking}em;
+    
+}
