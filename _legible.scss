@@ -13,8 +13,8 @@
     
     @if ($unitless-size < 18) {
     
-	    $tracking: ( ($unitless-size*$unitless-size) - (28*($unitless-size)) + 220 ) /1000;
-    
+	    $tracking: (($unitless-size) - (3*$unitless-size) + 51 ) /1000;
+	        
     } @else {
 	    $tracking: 0;
     }
