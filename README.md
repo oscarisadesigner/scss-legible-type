@@ -1,4 +1,4 @@
-# legible-type-scss
+# scss-legible-type
 Sass mixin that alters letter-spacing on font-size
 
 ## Purpose
